@@ -124,7 +124,7 @@ class Annotator:
           which will not cover up drawings under the region.
         """
         outline = self._default_color if outline is None else outline
-        self._draw.rectangle(rect, fill=fill, outline=outline)
+        self._draw.rectangle(rect, fill=fill, outline=outline, width=10)
 
     # TODO(namiller): Add a font size parameter and load a truetype font.
     def text(self, location, text, color=None):
